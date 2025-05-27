@@ -40,7 +40,7 @@ jobs:
 
       - name: Install Gitleaks
         run: |
-          curl -sSLf -o gitleaks.tar.gz https://github.com/gitleaks/gitleaks/releases/download/v8.18.1/gitleaks_$(uname -s)_$(uname -m).tar.gz
+          curl -sSLf -o gitleaks.tar.gz https://github.com/gitleaks/gitleaks/releases/tag/v8.18.1/gitleaks_$(uname -s)_$(uname -m).tar.gz
           tar -xvzf gitleaks.tar.gz
           ls -la
           chmod +x gitleaks
