@@ -45,4 +45,4 @@ jobs:
           sudo mv gitleaks /usr/local/bin/
 
       - name: Gitleaks Code Scan
-        run: gitleaks detect --report-format json --report-path gitleaks-report.json
+        run: gitleaks detect -r gitleaks-report.json -f json
